@@ -23,8 +23,8 @@ body {
 
 ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding-left: 0;
 }
 
 a {
@@ -41,10 +41,23 @@ button {
   border: 1px solid transparent;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1170px;
+  margin: 0 auto;
+  width: 1200px;
   padding: 0 15px;
   outline: 2px solid tomato;
 }
@@ -108,7 +121,6 @@ button {
 }
 
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
   color: var(--third-color);
   font-weight: 900;
@@ -126,11 +138,11 @@ button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
   letter-spacing: 0.06em;
   border-radius: 4px;
   padding: 10px 32px;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero.button:hover,
@@ -151,8 +163,6 @@ button {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .visually-hidden {
@@ -174,7 +184,7 @@ button {
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  margin-top: 0;
+
   margin-bottom: 10px;
 }
 
@@ -190,7 +200,7 @@ button {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 0;
+
   margin-bottom: 50px;
 }
 
@@ -208,7 +218,7 @@ button {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 0;
+
   margin-bottom: 50px;
 }
 
@@ -222,7 +232,7 @@ button {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 0;
+
   margin-bottom: 10px;
 }
 
@@ -231,8 +241,6 @@ button {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .team-card img {
@@ -259,16 +267,26 @@ button {
   line-height: 1.7;
   letter-spacing: 0.03em;
   display: inline-block;
-  margin-bottom: 9px;
 }
 
-.address .link-contact {
+.address-list .link-contact {
   color: var(--second-footer-color);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   display: inline-block;
+}
+
+.address-item {
   margin-bottom: 9px;
+}
+
+.contact-item {
+  margin-bottom: 9px;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0px;
 }
 
 .footer-address:hover,
@@ -311,7 +329,7 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 0;
+
   margin-bottom: 4px;
 }
 
@@ -323,8 +341,6 @@ button {
   color: var(--second-color);
   line-height: 1.88;
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .portfolio-list img {

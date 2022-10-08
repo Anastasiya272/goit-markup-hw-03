@@ -7,6 +7,8 @@
   --second-color: #757575;
   --third-color: #ffffff;
   --logo-color: #000000;
+  --header-border-color: #ececec;
+  --portfolio-border-color: #eeeeee;
   --second-footer-color: rgba(255, 255, 255, 0.6);
   --box-shadow-color: rgba(0, 0, 0, 0.15);
   --hero-button-active-bg: #188ce8;
@@ -53,13 +55,14 @@ h6 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
   margin: 0 auto;
   width: 1200px;
   padding: 0 15px;
-  outline: 2px solid tomato;
 }
 
 /* ----------СТУДІЯ----------- */
@@ -69,10 +72,12 @@ img {
 .header-section {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 .logo.header {
   color: var(--logo-color);
+  margin-right: 93px;
 }
 
 .logo span {
@@ -85,6 +90,22 @@ img {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+}
+
+.nav-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
 }
 
 .nav-link {
@@ -140,9 +161,10 @@ img {
   line-height: 1.88;
   letter-spacing: 0.06em;
   border-radius: 4px;
-  padding: 10px 32px;
   display: block;
   margin: 0 auto;
+  min-width: 216px;
+  height: 50px;
 }
 
 .hero.button:hover,
@@ -184,8 +206,17 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-
   margin-bottom: 10px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.features-item {
+  min-width: 270px;
 }
 
 /* work-section */
@@ -200,8 +231,12 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
   margin-bottom: 50px;
+}
+
+.work-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* team  */
@@ -224,6 +259,14 @@ img {
 
 .team-card {
   background-color: var(--bg-main-color);
+  width: calc((100% - 90px) / 4);
+  filter: drop-shadow(0px 4px 4px var(--active-shadow-color));
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-subtitle {
@@ -241,10 +284,16 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 .team-card img {
   margin-bottom: 30px;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
 }
 
 /* footer  */
@@ -313,6 +362,10 @@ img {
   border-radius: 4px;
 }
 
+.filter-button .button {
+  padding: 6px 22px;
+}
+
 .filter button:hover,
 .filter button:focus {
   background-color: var(--accent-color);
@@ -321,6 +374,9 @@ img {
 
 .filter {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }
 
 .portfolio-title {
@@ -343,6 +399,14 @@ img {
   letter-spacing: 0.03em;
 }
 
-.portfolio-list img {
-  margin-bottom: 20px;
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-text-container {
+  padding: 20px 24px;
+  border: 1px solid var(--portfolio-border-color);
+  border-top: transparent;
 }

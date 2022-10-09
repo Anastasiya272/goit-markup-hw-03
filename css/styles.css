@@ -139,6 +139,7 @@ img {
 
 .hero-section {
   background-color: var(--bg-second-color);
+  padding: 200px 0px;
 }
 
 .hero-title {
@@ -275,8 +276,6 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-
-  margin-bottom: 10px;
 }
 
 .team-card .text {
@@ -284,16 +283,15 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
-}
-
-.team-card img {
-  margin-bottom: 30px;
 }
 
 .team-list {
   display: flex;
   gap: 30px;
+}
+
+.team-caption {
+  padding: 30px 0px;
 }
 
 /* footer  */
@@ -408,5 +406,5 @@ img {
 .portfolio-text-container {
   padding: 20px 24px;
   border: 1px solid var(--portfolio-border-color);
-  border-top: transparent;
+  border-top: none;
 }

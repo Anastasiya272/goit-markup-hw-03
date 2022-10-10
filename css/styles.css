@@ -276,6 +276,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-card .text {
@@ -358,6 +359,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  border: none;
 }
 
 .filter-button .button {
